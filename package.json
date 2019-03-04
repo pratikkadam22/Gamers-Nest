@@ -1,0 +1,20 @@
+{
+  "name": "Gamers-Nest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratikkadam22/Gamers-Nest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratikkadam22/Gamers-Nest/issues"
+  },
+  "homepage": "https://github.com/pratikkadam22/Gamers-Nest#readme"
+}
