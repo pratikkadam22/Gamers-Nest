@@ -8,3 +8,30 @@
           </div>
     <% }); %>
 <% } %>
+
+<% if(successmsg != '') { %>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <%= successmsg %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<% } %>
+
+<% if(errormsg != '') { %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <%= errormsg %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<% } %>
+
+<% if(error != '') { %>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <%= error %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+<% } %>
