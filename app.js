@@ -4,7 +4,13 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
+
 const app = express();
+app.use(express.static("views"));
+
+app.set('layout', 'layout');
+app.set('layout', 'layoutdash');
+
 
 // Pssport configuration
 require('./config/passport')(passport);
