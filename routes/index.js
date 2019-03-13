@@ -7,7 +7,7 @@ var config = require('../config/twitter');
 var T = new Twit(config);
 
 var anthemtweets = {};
-T.get('search/tweets', { q: '#AnthemGame', count: 3 }, function(err, data, response) {
+T.get('search/tweets', { q: '#AnthemGame', count: 6 }, function(err, data, response) {
     anthemtweets = data.statuses;
   })
 
@@ -21,10 +21,16 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
         layout: 'layoutdash'
     }));
 
+// Browse Page
+router.get('/browse', ensureAuthenticated, (req, res) => 
+    res.render('browse', {
+        layout: 'layoutbrowse'
+    }));
+
 // Anthem Page
 router.get('/anthem', ensureAuthenticated, (req, res) => 
     res.render('anthem', { 
-        layout: 'layout',
+        layout: 'layoutanthem',
         alltweets: anthemtweets 
     }));
 

@@ -1,91 +1,252 @@
-<!-- <%= alltweets %> -->
+<body class="full-layout">
+        <style>
 
-<style>
+                #tweet {
+                  width: 400px !important;
+                }
+              
+                #tweet iframe {
+                  border: none !important;
+                  box-shadow: none !important;
+                }
+              
+              </style>
+        <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+        <div class="body-wrapper">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header"> <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
+              <div class="navbar-brand text-center"> <a href="/dashboard">Home</a><br><br>
+                <a href="/browse">Browse</a> </div>
+              <!-- /.navbar-brand --> 
+            </div>
+            <!-- /.navbar-header -->
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="current"><a href="#home" class="hint--right" data-hint="Home"><i class="budicon-home-1"></i><span>Home</span></a></li>
+                <li><a href="#about" class="hint--right" data-hint="About"><i class="budicon-profile"></i><span>About</span></a></li>
+                <li><a href="#requirements" class="hint--right" data-hint="Requirements"><i class="budicon-list"></i><span>Requirements</span></a></li>
+                <li><a href="#screenshots" class="hint--right" data-hint="Screenshots"><i class="budicon-image"></i><span>Screenshots</span></a></li>
+                <li><a href="#videos" class="hint--right" data-hint="Videos"><i class="budicon-video"></i><span>Videos</span></a></li>
+                <li><a href="#contact" class="hint--right" data-hint="Tweets"><i class="budicon-profile"></i><span>Tweets</span></a></li>
+                <li><a href="#elsewhere" class="hint--right fancybox-inline" data-hint="Follow" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-heart-empty-1"></i><span>Elsewhere</span></a></li>
+              </ul>
+              <!-- /.navbar-nav --> 
+            </div>
+            <!-- /.navbar-collapse -->
+            <div id="elsewhere" style="display:none;">
+              <h1>Follow, Like, Subscribe!</h1>
+              <div class="divide20"></div>
+              <ul class="social">
+                <li><a href="https://twitter.com/anthemgame?lang=en" target="_blank"><i class="icon-s-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/AnthemGame/" target="_blank"><i class="icon-s-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCIfV-AOz4jZeazVDbzgT9lQ" target="_blank"><i class="icon-s-youtube"></i></a></li>
+              </ul>
+            </div>
+            <!-- /#elsewhere --> 
+          </nav>
+          <!-- /.navbar -->
+          
+          <section id="home" class="naked">
+            <div class="fullscreenbanner-container revolution">
+              <div class="fullscreenbanner">
+                <ul>
+                  <li data-transition="fade"> <img src="./style/images/dummy.png"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
+                    <h1 class="tp-caption caption large sfb" data-x="center" data-y="center" data-voffset="-25" data-speed="900" data-start="1000" data-endspeed="100" data-easing="Sine.easeOut">A N T H E M</h1>
+                    <div class="tp-caption tp-fade fadeout tp-resizeme" data-x="center" data-y="center" data-voffset="25" data-speed="100"
+                    data-start="1500"
+                    data-easing="Power4.easeOut"
+                    data-splitin="chars"
+                    data-splitout="chars"
+                    data-elementdelay="0.03"
+                    data-endelementdelay="0"
+                    data-endspeed="100"
+                    data-endeasing="Power1.easeOut"
+                    style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap; font-family: 'Lucida Console';">A new game from EA's BioWare studio</div>
+                    <div class="arrow smooth"><a href="#about"><i class="icon-down-open-big"></i></a></div>
+                  </li>
+                </ul>
+                <div class="tp-bannertimer"></div>
+              </div>
+              <!-- /.fullscreenbanner --> 
+            </div>
+            <!-- /.revolution --> 
+          </section>
+          <!-- /#home -->
+            
+          <div class="container">
+            <section id="about">
+              <div class="box">
+                <h2 class="section-title">About The Game</h2>
+                <div class="row">
+                  <div class="col-md-5 col-md-push-7 col-sm-12">
+                    <figure class="frame"><img src="https://cdn.gamerant.com/wp-content/uploads/anthem-gameplay-fort-tarsis-characters.jpg.optimal.jpg" alt="" /></figure>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-7 col-md-pull-5 col-sm-12">
+                    <p style="text-align: justify">Set on an unnamed planet, players assume the role of Freelancers, heroic adventurers who wear powerful exosuits to defend humanity from the threats beyond their cities' walls.</p> 
+                    <p style="text-align: justify">The game's title refers to the Anthem of Creation, a powerful and mysterious force responsible for most of the extraordinary technology, phenomena, and threats in the world. In the main narrative, the player's Freelancer is tasked with stopping the villainous Monitor from seizing control of the Anthem.</p>
+                    <p style="text-align: justify">Release Date: &nbsp February 22, 2019<br>
+                                                Platform: &nbsp Microsoft Windows, PlayStation 4, Xbox One<br>
+                                                Genre: &nbsp Action role-playing<br>
+                                                Mode: &nbsp Multiplayer</p>    
+                </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+                 
+              </div>
+              <!-- /.box --> 
+            </section>
+            <!-- /#about -->
 
-        #tweet {
-          width: 400px !important;
-        }
-      
-        #tweet iframe {
-          border: none !important;
-          box-shadow: none !important;
-        }
-      
-      </style>
-      
-      <div id="tweet0"></div>
-      <div id="tweet1"></div>
-      <div id="tweet2"></div>
-      
-      <script sync src="https://platform.twitter.com/widgets.js"></script>
-      
-<script type='text/javascript'>
+            <section id="requirements">
+                    <div class="box">
+                      <h2 class="section-title">System Requirements</h2>
+                      <div class="row">
+                        <div class="col-md-6 col-md-6 col-sm-6 col-xs-6">
+                            <p><h4>Minimum</h4></p>
+                            OS: &nbsp 64-bit Windows 10<br>
+                            CPU: &nbsp Intel Core i5 3570 or AMD FX-6350<br>
+                            RAM: &nbsp 8 GB System Memory<br>
+                            GPU: &nbsp NVIDIA GTX 760, AMD Radeon 7970 / R9280X<br>
+                            GPU RAM: &nbsp 2 GB Video Memory<br>
+                            HARD DRIVE: &nbsp At least 50 GB of free space<br>
+                            DIRECTX: &nbsp DirectX 11
+                        </div>
+                        <!-- /column -->
+                        <div class="col-md-6 col-md-6 col-sm-6 col-xs-6">
+                            <p><h4>Recommended</h4></p>
+                            OS: &nbsp 64-bit Windows 10<br>
+                            CPU: &nbsp Intel Core i7-4790 3.6GHz or AMD Ryzen 3 1300X 3.5 GHz<br>
+                            RAM: &nbsp 16 GB System Memory<br>
+                            GPU: &nbsp NVIDIA GTX 1060/ RTX 2060, AMD RX 480<br>
+                            GPU RAM: &nbsp 4 GB Video Memory<br>
+                            HARD DRIVE: &nbsp At least 50 GB of free space<br>
+                            DIRECTX: &nbsp DirectX 11   
+                      </div>
+                        <!-- /column -->
+                      </div>
+                      <!-- /.row -->
+                       
+                    </div>
+                    <!-- /.box --> 
+                  </section>
+                  <!-- /#requirements -->
 
-var tweet = [];
-var id = [];
-window.onload = (function(){
-    var rows =<%-JSON.stringify(alltweets)%>
+             <section id="screenshots" class="portfolio">
+                      <div class="box">
+                        <h2 class="section-title pull-left">Screenshots</h2>
+                        <div class="clearfix"></div>
+                        <div id="grid-container" class="cbp-l-grid-masonry">
+                          <ul>
+                            <li class="cbp-item frame architecture">
+                              <div class="cbp-caption-defaultWrap"> <img src="https://cdn.gearnuke.com/wp-content/uploads/2018/06/anthem-bioware-e3-2018-8.jpg" alt=""> </div>
+                            </li>
+                            <li class="cbp-item frame macro">
+                              <div class="cbp-caption-defaultWrap"> <img src="https://static.gamespot.com/uploads/scale_super/1581/15811374/3490621-anthem+flying.jpg" alt=""> </div>
+                            </li>
+                            <li class="cbp-item frame portrait">
+                              <div class="cbp-caption-defaultWrap"> <img src="https://i.ytimg.com/vi/zQhbHwkMSA4/maxresdefault.jpg" alt=""> </div>
+                            </li>
+                            <li class="cbp-item frame still-life">
+                              <div class="cbp-caption-defaultWrap"> <img src="https://cdn.gamer-network.net/2019/usgamer/anthem-combat-screen.jpg" alt=""> </div>
+                            </li>
+                            <li class="cbp-item frame architecture">
+                              <div class="cbp-caption-defaultWrap"> <img src="https://static.businessinsider.sg/2019/02/02/5c7045dd26289840e71f0b54.png" alt=""> </div>
+                            </li>
+                            <li class="cbp-item frame macro">
+                              <div class="cbp-caption-defaultWrap"> <img src="https://www.washingtonpost.com/resizer/TYCKtMYUXDQL20HGu0Wo38cCw2s=/1454x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LHQRIYJZDRHL5CKJO4IBDJ2PLE.jpg" alt=""> </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.cbp-l-grid-masonry -->
+                        </div>
+                      <!-- /.box --> 
+                    </section>
+                    <!-- /#screenshots -->
 
-    for (var i = 0; i < rows.length; i++){
-        
-        tweet[i] = document.getElementById("tweet" + i);
-        id[i] = rows[i].id_str;
+                    <section id="videos">
+                            <div class="box">
+                              <h2 class="section-title">Videos</h2>
+                              <div class="row">
+                                <div class="col-md-6 col-md-6 col-sm-6 col-xs-6">
+                                    <iframe width="510" height="280" src="https://www.youtube.com/embed/EL5GSfs9fi4">
+                                    </iframe>
+                                </div>
+                                <!-- /column -->
+                                <div class="col-md-6 col-md-6 col-sm-6 col-xs-6">
+                                    <iframe width="510" height="280" src="https://www.youtube.com/embed/DPf-EATqFng">
+                                    </iframe>  
+                                </div><br><br>
+                                <!-- /column -->
+                                <div class="col-md-6 col-md-6 col-sm-6 col-xs-6">
+                                        <iframe width="510" height="280" src="https://www.youtube.com/embed/ye3aF_eNtUQ">
+                                        </iframe>
+                                    </div>
+                                    <!-- /column -->
+                                    <div class="col-md-6 col-md-6 col-sm-6 col-xs-6">
+                                        <iframe width="510" height="280" src="https://www.youtube.com/embed/Dx2bXPIYxcE">
+                                        </iframe>  
+                                    </div><br>
+                                    <!-- /column -->
+                              </div>
+                              <!-- /.row -->
+                               
+                            </div>
+                            <!-- /.box --> 
+                          </section>
+                          <!-- /#requirements -->
+            
+            <!-- /#tweets -->
+            <section id="contact">
+              <div class="box">
+                    <h2 class="section-title pull-left">Tweets</h2>
+                    <div class="clearfix"></div>
+                    <div id="grid-container" class="cbp-l-grid-masonry">
+                    <div class="row">
+                    <div id="tweet0" class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+                    <div id="tweet1" class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+                    <div id="tweet2" class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+                    </div>
+                    <div class="row">
+                    <div id="tweet3" class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+                    <div id="tweet4" class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+                    <div id="tweet5" class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+                    </div>
+                    <script sync src="https://platform.twitter.com/widgets.js"></script>
       
-          twttr.widgets.createTweet(
-            id[i], tweet[i], 
-            {
-              conversation : 'none',    // or all
-              cards        : 'visible',  // or visible 
-              linkColor    : '#cc0000', // default is blue
-              theme        : 'light'    // or dark
-            })
-          .then (function (el) {
-            el.contentDocument.querySelector(".footer").style.display = "none";
-          });
-    }
-});
-  </script>
+                    <script type='text/javascript'>
 
-<!-- <style>
+                    var tweet = [];
+                    var id = [];
+                    var rows =<%-JSON.stringify(alltweets)%>
 
-        #tweet {
-          width: 400px !important;
-        }
-      
-        #tweet iframe {
-          border: none !important;
-          box-shadow: none !important;
-        }
-      
-      </style>
-      
-      <div id="tweet" tweetID="1093902599965700097"></div>
-      
-      <script sync src="https://platform.twitter.com/widgets.js"></script>
-      
-      <script>
-      
-        window.onload = (function(){
-      
-          var tweet = document.getElementById("tweet");
-          var id = tweet.getAttribute("tweetID");
-      
-          twttr.widgets.createTweet(
-            id, tweet, 
-            {
-              conversation : 'none',    // or all
-              cards        : 'visible',  // or visible 
-              linkColor    : '#cc0000', // default is blue
-              theme        : 'light'    // or dark
-            })
-          .then (function (el) {
-            el.contentDocument.querySelector(".footer").style.display = "none";
-          });
-      
-        });
-      
-      </script> -->
-      
-
-
-
+                    for (var i = 0; i < rows.length; i++){
+                        
+                        tweet[i] = document.getElementById("tweet" + i);
+                        id[i] = rows[i].id_str;
+                    
+                        twttr.widgets.createTweet(
+                            id[i], tweet[i], 
+                            {
+                            conversation : 'none',    // or all
+                            cards        : 'visible',  // or visible 
+                            linkColor    : '#cc0000', // default is blue
+                            theme        : 'light'    // or dark
+                            })
+                        .then (function (el) {
+                            el.contentDocument.querySelector(".footer").style.display = "none";
+                        });
+                    };
+                    </script>
+                    </div>
+              </div>
+              <!-- /.box --> 
+            </section>
+            <!-- /#tweets -->
+            
+          </div>
+          <!-- /.container --> 
+        </div>
+        <!-- /.body-wrapper --> 
+        </body>
