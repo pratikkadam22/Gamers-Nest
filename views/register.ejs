@@ -1,9 +1,8 @@
-<body background="https://i.ibb.co/gjTsX6y/203599-vertical-2560x1440-wallpaper-gaming-2560x1440.jpg"
-style="height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
 <div class="row mt-5">
     <div class="col-md-6 m-auto">
       <div class="card card-body">
-          <center><img class="center mb-3" height="150px" width="150px" src="https://i.ibb.co/vqr9SZk/logo.jpg"></img></center>
+        <center><img class="center mb-3" height="150px" width="150px" src="https://i.ibb.co/vqr9SZk/logo.jpg"></img></center>
         <% include ./partials/messages %>
         <form action="/users/register" method="POST">
           <div class="form-group">
@@ -50,12 +49,10 @@ style="height: 100%; background-position: center; background-repeat: no-repeat; 
               value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
             />
           </div>
-          <button type="submit" class="btn btn-secondary btn-block" style="background-color: black">
-            Register
-          </button>
+          <button type="submit" class="btn btn-secondary btn-block" style="background-color: black">Register</button>
         </form>
         <p class="lead mt-4">Have An Account? <a href="/users/login" style="color:blue"><b>Login</b></a></p>
       </div>
     </div>
   </div>
-  </body>
+ 

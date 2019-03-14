@@ -9,9 +9,6 @@ const app = express();
 app.use(express.static("views"));
 
 app.set('layout', 'layout');
-app.set('layout', 'layoutdash');
-app.set('layout', 'layoutbrowse');
-app.set('layout', 'layoutanthem');
 
 // Pssport configuration
 require('./config/passport')(passport);

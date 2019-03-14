@@ -1,0 +1,172 @@
+.spinner,
+.cbp-popup-loadingBox,
+.tp-loader.spinner0,
+#fancybox-loading div {
+    border-left: 3px solid rgba(255, 165, 0, 1) !important;
+    border-right: 3px solid rgba(255, 165, 0,.15) !important;
+    border-bottom: 3px solid rgba(255, 165, 0,.15) !important;
+    border-top: 3px solid rgba(255, 165, 0,.8) !important;
+}
+a {
+    color: orange;
+}
+.post-title a:hover {
+    color: orange
+}
+ul.circled li:before {
+    color: orange;
+}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus,
+.pagination ul > .active > a,
+.pagination ul > .active > span,
+.open >.dropdown-toggle.btn-default,
+.btn.cbp-filter-item-custom-active {
+    border: 2px solid orange;
+    color: orange !important;
+}
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active,
+.btn-green.active,
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active,
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active,
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active,
+.btn-pink.active,
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.btn-aqua:hover,
+.btn-aqua:focus,
+.btn-aqua:active,
+.btn-aqua.active,
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active {
+    color: #252525 !important;
+}
+.navbar-nav > li > a:focus,
+.nav > li > a:hover,
+.nav > li.current > a {
+    background: none;
+    color: orange !important;
+}
+.services-1 .icon i.icn {
+    color: orange;
+}
+.services-2 i {
+    color: orange;
+}
+.services-2 a:hover {
+    color: orange !important
+}
+.services-3 i {
+    color: orange;
+}
+.progress-list li em {
+    color: orange;
+}
+.progress.plain {
+    border: 1px solid orange;
+}
+.progress.plain .bar {
+    background: orange;
+}
+.tabs-top .tab a:hover,
+.tabs-top .tab.active a {
+    color: orange;
+    border-color: orange;
+}
+.panel-title:hover,
+.panel-active .panel-heading .panel-title {
+    border: 2px solid orange
+}
+.panel-title > a:hover,
+.panel-active a {
+    color: orange
+}
+.tooltip-inner {
+    background-color: orange;
+}
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow {
+    border-top-color: orange
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: orange
+}
+.tooltip.left .tooltip-arrow {
+    border-left-color: orange
+}
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+    border-bottom-color: orange
+}
+.hint:after,
+[data-hint]:after {
+    background: orange;
+}
+.hint--top:before {
+    border-top-color: orange
+}
+.hint--bottom:before {
+    border-bottom-color: orange
+}
+.hint--left:before {
+    border-left-color: orange
+}
+.hint--right:before {
+    border-right-color: orange
+}
+.cbp-popup-singlePage .cbp-popup-prev:hover:before,
+.cbp-popup-singlePage .cbp-popup-next:hover:before,
+.cbp-popup-singlePage .cbp-popup-close:hover:before,
+.cbp-popup-singlePageInline .cbp-popup-close:hover:before {
+    border: 2px solid orange !important;
+    color: orange !important;
+}
+.sp-selected-thumbnail {
+    border-bottom: 3px solid orange
+}
+.meta a:hover {
+    color: orange
+}
+.sidebox a:hover {
+    color: orange !important
+}
+ul.layout-switcher li a.active {
+    color: orange;
+    border-color: orange;
+}
+#comments .info h2 a:hover {
+    color: orange
+}
+#comments a.reply-link:hover {
+    color: orange
+}
+.contact-info li a:hover {
+    color: orange
+}
+.pricing .plan h4 span {
+    color: orange
+}
