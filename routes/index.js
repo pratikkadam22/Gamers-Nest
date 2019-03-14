@@ -21,6 +21,13 @@ T.get('search/tweets', { q: '#TheDivision2', count: 6 }, function(err, data, res
   })
 // Division Tweets end
 
+// Farcry Tweets start
+var farcrytweets = {};
+T.get('search/tweets', { q: '#FarCryNewDawn', count: 6 }, function(err, data, response) {
+    farcrytweets = data.statuses;
+  })
+// Farcry Tweets end
+
 // Welcome Page
 router.get('/', (req, res) => res.render('welcome', { layout: 'layout' }));
 
@@ -49,6 +56,13 @@ router.get('/division', ensureAuthenticated, (req, res) =>
     res.render('division', { 
         layout: 'layoutdivision',
         alltweets: divisiontweets 
+    }));
+
+// Farcry Page
+router.get('/farcry', ensureAuthenticated, (req, res) => 
+    res.render('farcry', { 
+        layout: 'layoutfarcry',
+        alltweets: farcrytweets 
     }));
 
 module.exports = router;
