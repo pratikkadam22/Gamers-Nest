@@ -28,6 +28,13 @@ T.get('search/tweets', { q: '#FarCryNewDawn', count: 6 }, function(err, data, re
   })
 // Farcry Tweets end
 
+// MetroExodus Tweets start
+var metroexodustweets = {};
+T.get('search/tweets', { q: '#MetroExodus', count: 6 }, function(err, data, response) {
+    metroexodustweets = data.statuses;
+  })
+// MetroExodus Tweets end
+
 // Welcome Page
 router.get('/', (req, res) => res.render('welcome', { layout: 'layout' }));
 
@@ -63,6 +70,13 @@ router.get('/farcry', ensureAuthenticated, (req, res) =>
     res.render('farcry', { 
         layout: 'layoutfarcry',
         alltweets: farcrytweets 
+    }));
+
+// MetroExodus Page
+router.get('/metroexodus', ensureAuthenticated, (req, res) => 
+    res.render('metroexodus', { 
+        layout: 'layoutmetroexodus',
+        alltweets: metroexodustweets 
     }));
 
 module.exports = router;
