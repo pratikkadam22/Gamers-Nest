@@ -35,6 +35,13 @@ T.get('search/tweets', { q: '#MetroExodus', count: 6 }, function(err, data, resp
   })
 // MetroExodus Tweets end
 
+// DevilMayCry Tweets start
+var devilmaycrytweets = {};
+T.get('search/tweets', { q: '#DevilMayCryV', count: 6 }, function(err, data, response) {
+    devilmaycrytweets = data.statuses;
+  })
+// DevilMayCry Tweets end
+
 // Welcome Page
 router.get('/', (req, res) => res.render('welcome', { layout: 'layout' }));
 
@@ -77,6 +84,13 @@ router.get('/metroexodus', ensureAuthenticated, (req, res) =>
     res.render('metroexodus', { 
         layout: 'layoutmetroexodus',
         alltweets: metroexodustweets 
+    }));
+
+// DevilMayCry Page
+router.get('/devilmaycry', ensureAuthenticated, (req, res) => 
+    res.render('devilmaycry', { 
+        layout: 'layoutdevilmaycry',
+        alltweets: devilmaycrytweets 
     }));
 
 module.exports = router;
