@@ -49,6 +49,22 @@ T.get('search/tweets', { q: '#MK11', count: 6 }, function(err, data, response) {
   })
 // MortalKombat Tweets end
 
+// ApexLegends Tweets start
+var apexlegends = {};
+T.get('search/tweets', { q: '#ApexLegendsFanartChallenge', count: 6 }, function(err, data, response) {
+    apexlegendstweets = data.statuses;
+  })
+// ApexLegends Tweets end
+
+// ResidentEvil2 Tweets start
+var residentevil2tweets = {};
+T.get('search/tweets', { q: '#RE2', count: 6 }, function(err, data, response) {
+    residentevil2tweets = data.statuses;
+  })
+// ResidentEvil2 Tweets end
+
+
+
 // Welcome Page
 router.get('/', (req, res) => res.render('welcome', { layout: 'layout' }));
 
@@ -107,4 +123,17 @@ router.get('/mortalkombat', ensureAuthenticated, (req, res) =>
         alltweets: mortalkombattweets 
     }));
 
+// ApexLegends Page
+router.get('/apexlegends', ensureAuthenticated, (req, res) => 
+    res.render('apexlegends', { 
+        layout: 'layoutapexlegends',
+        alltweets: apexlegendstweets 
+    }));
+
+// ResidentEvil2 Page
+router.get('/residentevil2', ensureAuthenticated, (req, res) => 
+    res.render('residentevil2', { 
+        layout: 'layoutresidentevil2',
+        alltweets: residentevil2tweets 
+    }));
 module.exports = router;
