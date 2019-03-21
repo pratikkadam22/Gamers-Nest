@@ -10,6 +10,6 @@ npm i express bcryptjs passport passport-local express-ejs-layouts mongoose conn
 
 ### 2) Running the project:-
 
-##### To run the code, use the following command.
+##### To run the code, use the following command:-
 
 npm run dev
