@@ -42,6 +42,13 @@ T.get('search/tweets', { q: '#DevilMayCryV', count: 6 }, function(err, data, res
   })
 // DevilMayCry Tweets end
 
+// MortalKombat Tweets start
+var mortalkombattweets = {};
+T.get('search/tweets', { q: '#MK11', count: 6 }, function(err, data, response) {
+    mortalkombattweets = data.statuses;
+  })
+// MortalKombat Tweets end
+
 // Welcome Page
 router.get('/', (req, res) => res.render('welcome', { layout: 'layout' }));
 
@@ -91,6 +98,13 @@ router.get('/devilmaycry', ensureAuthenticated, (req, res) =>
     res.render('devilmaycry', { 
         layout: 'layoutdevilmaycry',
         alltweets: devilmaycrytweets 
+    }));
+
+// MortalKombat Page
+router.get('/mortalkombat', ensureAuthenticated, (req, res) => 
+    res.render('mortalkombat', { 
+        layout: 'layoutmortalkombat',
+        alltweets: mortalkombattweets 
     }));
 
 module.exports = router;
