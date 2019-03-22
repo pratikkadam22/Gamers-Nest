@@ -9,7 +9,7 @@ https://nodejs.org/en/
 
 ##### Clone the repository and install the required packages in the project folder using the following command:-
 
-npm i express bcryptjs passport passport-local express-ejs-layouts mongoose connect-flash express-session
+npm i express bcryptjs passport passport-local express-ejs-layouts mongoose connect-flash express-session twit
 
 ### 3) Running the project:-
 
