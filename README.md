@@ -21,9 +21,9 @@ npm run dev
 
 ## Walkthrough:-
 
-##### 1) If visiting the website for the first time, Register!
-##### 2) Once registered, log in using the credentials
-##### 3) On your dashboard you can choose the following options:-
-a) Explore the featured games by clicking the "EXPLORE" button
-b) Browse the directory of games by clicking the "Browse Games" button on the navbar at the top
-c) Logout by clicking the "Logout" button
+#### 1) If visiting the website for the first time, Register!
+#### 2) Once registered, log in using the credentials
+#### 3) On your dashboard you can choose the following options:-
+##### a) Explore the featured games by clicking the "EXPLORE" button
+##### b) Browse the directory of games by clicking the "Browse Games" button on the navbar at the top
+##### c) Logout by clicking the "Logout" button
