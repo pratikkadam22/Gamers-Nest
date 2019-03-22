@@ -51,7 +51,7 @@ T.get('search/tweets', { q: '#MK11', count: 6 }, function(err, data, response) {
 
 // ApexLegends Tweets start
 var apexlegends = {};
-T.get('search/tweets', { q: '#ApexLegendsFanartChallenge', count: 6 }, function(err, data, response) {
+T.get('search/tweets', { q: '#ApexLegends', count: 6 }, function(err, data, response) {
     apexlegendstweets = data.statuses;
   })
 // ApexLegends Tweets end
